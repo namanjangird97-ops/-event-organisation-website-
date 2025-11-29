@@ -1,0 +1,387 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 40%, #43c6ac 80%, #185a9d 100%);
+  color: #333;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Abstract glassmorphism blobs */
+body::before, body::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+  opacity: 0.22;
+  pointer-events: none;
+  filter: blur(8px);
+}
+
+body::before {
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle at 30% 30%, #43c6ac 60%, #fcb69f 100%, transparent 100%);
+  top: -120px;
+  left: -120px;
+}
+
+body::after {
+  width: 340px;
+  height: 340px;
+ 
+  bottom: -100px;
+  right: -100px;
+}   
+/* ...existing code... */  
+
+    /* Example CSS for header buttons */
+/* Example CSS for header buttons */
+.main-header a {
+    background-color: blue; /* Button ka background color blue ho jayega */
+    color: white;           /* Text ka color white kar do, taaki contrast acha dikhe */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+}
+
+
+.main-header a:hover {
+    background-color: darkblue; /* Hover karne pe thoda dark blue dikhaye */
+}
+
+.main-header .logo img {
+    height: 90px;
+}  
+ .h1{ 
+ 
+  width: 100%;
+  margin: 0 auto 10px auto;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+ 
+ .h2,
+ .h3{.main-header h2,
+.main-header h3 {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto 8px auto;
+}
+
+ }
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+   
+header {
+  background: #004080;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+   
+
+
+.marquee img {
+  height: 70px;   /* photo chhoti */
+  margin: 0 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.marquee img:hover {
+  transform: scale(1.1);
+} 
+   
+
+.marquee {
+  display: inline-block;
+  animation: scroll 4s linear infinite; /* ⚡ speed tez karne ke liye 20s → 10s */
+}
+
+@keyframes scroll {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
+
+.hero {
+  text-align: 10px;
+  padding: 80px 20px;
+  background: #f0f6ff;
+} 
+/* ...existing code... */
+.hero .btn {
+  margin-top: 32px;
+  display: inline-block;
+}
+/* ...existing code... */
+
+.hero h2 { font-size: 2rem; }
+.hero p { font-size: 1.2rem; margin: 10px 0; } 
+
+
+.btn {
+  background: linear-gradient(90deg, #ff9800 0%, #ffb347 100%);
+  color: white;
+  padding: 10px 20px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover { 
+  background: #004080;
+  display: inline-block;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+ 
+}
+/* ...existing code... */
+#events {
+  background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+  padding: 40px 0;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(60, 60, 120, 0.15);
+  margin: 40px 0;
+}
+
+#events h2 {
+  text-align: center;
+  color: #234567;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.event-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.event-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(60, 60, 120, 0.10);
+  padding: 24px 32px;
+  min-width: 220px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.event-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(60, 60, 120, 0.18);
+}    
+#contact {
+  background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+  padding: 50px 20px;
+  border-radius: 18px;
+  margin: 40px 0;
+  box-shadow: 0 4px 24px rgba(60, 60, 120, 0.10);
+}
+
+#contact h2 {
+  color: #004080;
+  margin-bottom: 18px;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto 24px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  font-size: 1rem;
+}
+
+.contact-details {
+  margin-top: 18px;
+  color: #234567;
+  font-size: 1.05rem;
+}
+/* ...existing code... */ 
+/* ...existing code... */
+.org-list {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.org-card {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(60, 60, 120, 0.12);
+  padding: 28px 36px;
+  min-width: 220px;
+  max-width: 280px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 2px solid #e0e7ef;
+}
+
+.org-card h3 {
+  margin-bottom: 10px;
+  color: #234567;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+}
+
+.org-card p {
+  color: #444;
+  font-size: 1em;
+}
+
+.org-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 8px 32px rgba(60, 60, 120, 0.18);
+  border-color: #43c6ac;
+}
+/* ...existing code... */
+.org-list {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.org-card {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(60, 60, 120, 0.12);
+  padding: 28px 36px;
+  min-width: 220px;
+  max-width: 280px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 2px solid #e0e7ef;
+}
+
+  
+  
+.org-card h3 {
+  margin-bottom: 10px;
+  color: #fff;
+  
+  background: linear-gradient(90deg, #43c6ac 0%, #004080 100%);
+  padding: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(67,198,172,0.12);
+}
+
+
+.org-card p {
+  color: #444;
+  font-size: 1em;
+}
+
+.org-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 8px 32px rgba(60, 60, 120, 0.18);
+  border-color: #43c6ac;
+}
+
+
+
+
+
+
+footer {
+  background: #004080;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+.signup {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.signup form {
+  max-width: 350px;
+  margin: auto;
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.signup input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+#photo-upload-container {
+  display: flex;
+  justify-content: column;
+  align-items: center;
+  min-height: 200px; /* ya jitna height chahiye */
+}
+#photo-upload-container form {
+  text-align: center;
+}
+
+.signup button {
+  width: 100%;
+}
+/* ...existing code... */
+footer {
+  background: #004080;
+  color: white;
+  padding: 25px 15px;
+  text-align: center;
+  font-size: 1.15rem;      /* text size bada */
+  font-weight: 500;        /* thoda bold */
+  letter-spacing: 1px;     /* thoda spacing */
+  line-height: 1.7;        /* line height */
+}
+
+.foot-panel2 {
+  background-color: #222;
+  color: #f3f3f3;
+  font-size: 1.08rem;      /* panel2 ka text bhi bada */
+  font-weight: 500;
+  padding: 30px 20px;
+  border-radius: 0 0 18px 18px;
+  box-shadow: 0 -2px 16px rgba(0,0,0,0.08);
+}
+/* ...existing code... */
