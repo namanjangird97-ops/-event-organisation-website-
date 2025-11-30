@@ -1,2 +1,2 @@
 # -event-organisation-website-
-"A responsive college event organization website. View the live demo here: = https://eventmanagmentparicpatonsystem.netlify.app/
+A responsive College Event Management website designed to organize and showcase campus events. Link: https://eventmanagmentparicpatonsystem.netlify.app/
