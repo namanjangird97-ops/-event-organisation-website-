@@ -16,7 +16,7 @@ function showNumber() {
 // Close modal when clicking outside
 window.onclick = function(e) {
   const modal = document.getElementById("modal");
-  if (e.target == modal) {
+  if (e.target == modal) 
     modal.style.display = "none";
   }
 } // Preview uploaded photo
