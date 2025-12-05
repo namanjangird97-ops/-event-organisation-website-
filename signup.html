@@ -23,11 +23,10 @@
   <input type="password" placeholder="Create Password" required>
 
   <!-- Photo Upload Section in signup.html -->
-<div class="photo-upload-container">
-  <label for="photoUpload">Upload Your Photo:</label><br>
-  <input type="file" id="photoUpload" name="photoUpload" accept="image/*">
-</div>
-</div>
+document.getElementById("signupForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      document.getElementById("successMsg").style.display = "block";
+      document.getElementById("signupForm").reset();
   <button type="submit" class="btn">Sign Up</button>
 </form>
 <p id="successMsg" style="color:green; display:none;">✅ Registration Successful!</p>
